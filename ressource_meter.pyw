@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-"""This program might have a "light memory leak" on OSX.
-As such the memory usage might go up to ~500MB(was on Win10).
-Linux should be fine, and Win10 does not have it anymore.
-Thanks matplotlib for saving previous frames of an animation 👍.
-"""
 import psutil
 import tkinter as tk
 import gc

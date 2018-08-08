@@ -8,7 +8,7 @@ Thanks matplotlib for saving previous frames of an animation 👍.
 
 
 ## Dependencies
-* python3 (py3.7 tested)
+* python3 (python3.7 tested)
 * tkinter
 * psutil
 * matplotlib
@@ -17,15 +17,7 @@ Thanks matplotlib for saving previous frames of an animation 👍.
 ##### Q: How high is the resource usage?
 A: It uses:\
 1core at ~1GHz\
-50MB to ~500MB RAM after multiple hours.
-
-1. **multicore script**
-   1. +50MB/h Win10
-   2. +13MB/h Fedora27
-
-2. **core summary script**
-   1. +15MB/h win10
-
+50MB at the beginning
 
 ##### Q: Why?
 A: To improve my programming abilities.

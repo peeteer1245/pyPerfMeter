@@ -65,6 +65,8 @@ def animate(for_some_reason_it_wants_a_variable):
 
     used_memory = round(psutil.virtual_memory().used / 1024**3, 3)  # conversion
     used_memory = "{:,}".format(used_memory) + "GB"                 # formatting
+    cpuytotalList = [sum(filter(None, [x[i] if x[i] is not None else None for x in cpuyList])) / psutil.cpu_count() for i in range(len(cpuyList[0]))]
+    subplot.plot(xList, cpuytotalList, label="cpu {}%".format(round(sum([x[-1] for x in cpuyList]) / len(cpuyList), 2)), color="red")
     subplot.plot(xList, memyList, label=("memory " + used_memory), color="black")
     subplot.plot(frameX, frameY, color="grey")
     subplot.legend(loc=2, framealpha=0)
